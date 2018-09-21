@@ -5,20 +5,24 @@
 
 https://www.vaultproject.io/docs/plugin/index.html
 
-## Usage
-
-```
+```sh
+# Example Setup
 vault write sys/plugins/catalog/pwgen-plugin \
   sha_256="$SHASUM" \
   command="vault-pwgen-plugin"
 vault secrets enable -path=diceware -plugin-name=pwgen-plugin plugin
+```
 
+## Usage
+
+via Vault CLI:
+```
 vault write diceware/pwgen count=2
 Key         Value
 ---         -----
 password    abmatchlessabrocklike
 ```
-Or via REST API:
+via REST API:
 ```
 curl --data '{"count": 6}' "$VAULT_ADDR/v1/diceware/pwgen"
 {

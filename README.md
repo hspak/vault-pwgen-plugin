@@ -1,6 +1,8 @@
 # vault-pwgen-plugin
 ### Vault plugin to support password generation using [EFF's diceware list](https://www.eff.org/deeplinks/2016/07/new-wordlists-random-passphrases).
 
+[![Build Status](https://travis-ci.com/hspak/vault-pwgen-plugin.svg?branch=master)](https://travis-ci.com/hspak/vault-pwgen-plugin)
+
 ## Installation
 
 https://www.vaultproject.io/docs/plugin/index.html
